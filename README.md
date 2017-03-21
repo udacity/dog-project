@@ -19,7 +19,7 @@ Along with exploring state-of-the-art CNN models for classification and localiza
 ### Instructions
 
 1. Clone the repository.
-2. Download the [dataset](https://www.dropbox.com/s/vzgr96dftik0xu6/dogImages.zip?dl=0).  Unzip the folder and place it in the repo, at location `path\to\dog-project\dogImages`.
+2. Download the [dataset](https://www.dropbox.com/s/vzgr96dftik0xu6/dogImages.zip?dl=0).  Unzip the folder and place it in the repo, at location `path/to/dog-project/dogImages`.
 3. Clone the project and navigate to the downloaded folder.
 	
 	```	
