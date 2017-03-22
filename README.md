@@ -38,7 +38,7 @@ Along with exploring state-of-the-art CNN models for classification and localiza
 	```
 		conda env create -f aind-dog-mac.yml
 		source activate aind-dog
-		set KERAS_BACKEND=tensorflow python -c "from keras import backend"
+		KERAS_BACKEND=tensorflow python -c "from keras import backend"
 	```
 
 	For __Windows__:
