@@ -19,17 +19,25 @@ Along with exploring state-of-the-art CNN models for classification and localiza
 ### Instructions
 
 1. Clone the repository.
-2. Download the [dataset](https://www.dropbox.com/s/vzgr96dftik0xu6/dogImages.zip?dl=0).  Unzip the folder and place it in the repo, at location `path/to/dog-project/dogImages`.
+2. Download the [dog dataset](https://www.dropbox.com/s/vzgr96dftik0xu6/dogImages.zip?dl=0).  Unzip the folder and place it in the repo, at location `path/to/dog-project/dogImages`.
 3. Clone the project and navigate to the downloaded folder.
 	
 	```	
 		git clone https://github.com/udacity/dog-project.git
 		cd dog-project
 	```
-4. Download the necessary Python modules.
+4. Install the necessary Python packages.
 
+	For __Mac/OSX__:
 	```
 		pip install -r requirements.txt
+		KERAS_BACKEND=tensorflow python -c "from keras import backend"
+	```
+	For __Windows__:
+	```
+		conda env create -f aind-dog-windows.yml
+		activate aind-dog
+		set KERAS_BACKEND=tensorflow python -c "from keras import backend"
 	```
 5. Open the notebook and follow the instructions.
 	
