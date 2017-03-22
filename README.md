@@ -26,16 +26,15 @@ Along with exploring state-of-the-art CNN models for classification and localiza
 		git clone https://github.com/udacity/dog-project.git
 		cd dog-project
 	```
-4. Install the necessary Python packages.
+4. Install the necessary Python packages.  If you are using a Mac, you need to pick only one of the two options below.
 
-	For __Mac/OSX__:
-		__Option 1__:
+	For __Mac/OSX__ (Option 1):
 	```
 		pip install -r requirements.txt
 		KERAS_BACKEND=tensorflow python -c "from keras import backend"
 	```
 	
-		__Option 2__:
+	For __Mac/OSX__ (Option 2):
 	```
 		conda env create -f aind-dog-mac.yml
 		source activate aind-dog
