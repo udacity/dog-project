@@ -29,10 +29,19 @@ Along with exploring state-of-the-art CNN models for classification and localiza
 4. Install the necessary Python packages.
 
 	For __Mac/OSX__:
+		__Option 1__:
 	```
 		pip install -r requirements.txt
 		KERAS_BACKEND=tensorflow python -c "from keras import backend"
 	```
+	
+		__Option 2__:
+	```
+		conda env create -f aind-dog-mac.yml
+		source activate aind-dog
+		set KERAS_BACKEND=tensorflow python -c "from keras import backend"
+	```
+
 	For __Windows__:
 	```
 		conda env create -f aind-dog-windows.yml
