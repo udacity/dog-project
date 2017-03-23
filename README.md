@@ -18,8 +18,7 @@ Along with exploring state-of-the-art CNN models for classification and localiza
 
 ### Instructions
 
-1. Clone the repository.
-2. Clone the project and navigate to the downloaded folder.
+1. Clone the repository and navigate to the downloaded folder.
 	
 	```	
 		git clone https://github.com/udacity/dog-project.git
