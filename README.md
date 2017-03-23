@@ -74,7 +74,7 @@ Instead of a local GPU, you could use Amazon Web Services to launch an EC2 GPU i
 
 ## Evaluation
 
-Your project will be reviewed by a Udacity reviewer against the CNN project [rubric](#rubric).  Review this rubric thoroughly and self-evaluate your project before submission.  All criteria found in the rubric must met specifications for you to pass.
+Your project will be reviewed by a Udacity reviewer against the CNN project [rubric](#rubric).  Review this rubric thoroughly and self-evaluate your project before submission.  All criteria found in the rubric must meet specifications for you to pass.
 
 
 ## Project Submission
