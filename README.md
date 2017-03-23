@@ -19,14 +19,14 @@ Along with exploring state-of-the-art CNN models for classification and localiza
 ### Instructions
 
 1. Clone the repository.
-2. Download the [dog dataset](https://www.dropbox.com/s/vzgr96dftik0xu6/dogImages.zip?dl=0).  Unzip the folder and place it in the repo, at location `path/to/dog-project/dogImages`.  The `dogImages/` folder should contain 133 folders, each corresponding to a different dog breed.
-3. Download the [human dataset](http://vis-www.cs.umass.edu/lfw/lfw.tgz).  Unzip the folder and place it in the repo, at location `path/to/dog-project/lfw`.  If you are using a Windows machine, you are encouraged to use [7zip](http://www.7-zip.org/) to extract the folder. 
-4. Clone the project and navigate to the downloaded folder.
+2. Clone the project and navigate to the downloaded folder.
 	
 	```	
 		git clone https://github.com/udacity/dog-project.git
 		cd dog-project
 	```
+3. Download the [dog dataset](https://www.dropbox.com/s/vzgr96dftik0xu6/dogImages.zip?dl=0).  Unzip the folder and place it in the repo, at location `path/to/dog-project/dogImages`.  The `dogImages/` folder should contain 133 folders, each corresponding to a different dog breed.
+4. Download the [human dataset](http://vis-www.cs.umass.edu/lfw/lfw.tgz).  Unzip the folder and place it in the repo, at location `path/to/dog-project/lfw`.  If you are using a Windows machine, you are encouraged to use [7zip](http://www.7-zip.org/) to extract the folder. 
 5. Install the necessary Python packages.  If you are using a Mac, you need to pick only one of the two options below.
 
 	For __Mac/OSX__ (Option 1):
