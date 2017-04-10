@@ -1,6 +1,5 @@
 .DS_Store
 dogImages/
-bottleneck_features/DogVGG16Data.npz
 lfw/
 saved_models/
 .ipynb_checkpoints/
