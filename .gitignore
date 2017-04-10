@@ -1,5 +1,5 @@
 .DS_Store
 dogImages/
-bottleneck_features/
+bottleneck_features/*
 lfw/
 saved_models/
