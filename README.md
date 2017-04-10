@@ -147,7 +147,7 @@ Click on the "Submit Project" button and follow the instructions to submit!
 |:---------------------:|:---------------------------------------------------------:| 
 | Write your Algorithm   | The submission uses the CNN from Step 5 to detect dog breed.  The submission has different output for each detected image type (dog, human, other) and provides either predicted actual (or resembling) dog breed. |
 
-#### Step 6: Test your Algorithm
+#### Step 7: Test your Algorithm
 | Criteria       		|     Meets Specifications	        			            | 
 |:---------------------:|:---------------------------------------------------------:| 
 | Test Your Algorithm on Sample Images!   | The submission tests at least 6 images, including at least two human and two dog images. |
