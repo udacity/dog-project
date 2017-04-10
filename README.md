@@ -24,7 +24,7 @@ Along with exploring state-of-the-art CNN models for classification and localiza
 		git clone https://github.com/udacity/dog-project.git
 		cd dog-project
 	```
-3. Download the [dog dataset](https://www.dropbox.com/s/vzgr96dftik0xu6/dogImages.zip?dl=0).  Unzip the folder and place it in the repo, at location `path/to/dog-project/dogImages`.  The `dogImages/` folder should contain 133 folders, each corresponding to a different dog breed.
+3. Download the [dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip).  Unzip the folder and place it in the repo, at location `path/to/dog-project/dogImages`.  The `dogImages/` folder should contain 133 folders, each corresponding to a different dog breed.
 4. Download the [human dataset](http://vis-www.cs.umass.edu/lfw/lfw.tgz).  Unzip the folder and place it in the repo, at location `path/to/dog-project/lfw`.  If you are using a Windows machine, you are encouraged to use [7zip](http://www.7-zip.org/) to extract the folder. 
 5. Install the necessary Python packages.  If you are using a Mac, you need to pick only one of the two options below.
 
@@ -55,7 +55,7 @@ Along with exploring state-of-the-art CNN models for classification and localiza
 
 __NOTE:__ While some code has already been implemented to get you started, you will need to implement additional functionality to successfully answer all of the questions included in the notebook. __Unless requested, do not modify code that has already been included.__
 
-__NOTE:__ In the notebook, you will need to train a CNN in Keras.  If your CNN is taking too long to train, feel free to pursue one of the options under the section __Accelerating the Training Process__ below.
+__NOTE:__ In the notebook, you will need to train CNNs in Keras.  If your CNN is taking too long to train, feel free to pursue one of the options under the section __Accelerating the Training Process__ below.
 
 
 
@@ -83,7 +83,7 @@ Your submission should consist of the github link to your repository.  Your repo
 - The `dog_app.ipynb` file with fully functional code, all code cells executed and displaying output, and all questions answered.
 - An HTML or PDF export of the project notebook with the name `report.html` or `report.pdf`.
 
-Please do not include the project data set provided in the `dogImages.zip` file.
+Please do __NOT__ include any of the project data sets provided in the `dogImages/` or `lfw/` folders.
 
 ### Ready to submit your project?
 
@@ -116,26 +116,36 @@ Click on the "Submit Project" button and follow the instructions to submit!
 
 | Criteria       		|     Meets Specifications	        			            | 
 |:---------------------:|:---------------------------------------------------------:| 
-| __Question 3:__ Making Predictions with ResNet-50 |  The submission returns the percentage of the first 100 images in the dog and human face datasets with a detected dog.          |
+| __Question 3:__ Assess the Dog Detector |  The submission returns the percentage of the first 100 images in the dog and human face datasets with a detected dog.          |
 
-
-#### Step 4: Create a CNN to Classify Dog Breeds
+#### Step 3: Create a CNN to Classify Dog Breeds (from Scratch)
 
 | Criteria       		|     Meets Specifications	        			            | 
 |:---------------------:|:---------------------------------------------------------:| 
-| Pre-process the Data | The submission uses the pre-specified train, test, and validation splits. The submission processes the data appropriately (i.e., with additional steps when using CNNs that have not been pre-trained on ImageNet). |
-| Model Architecture | The CNN architecture is not identical to the model from Step 3.  |
-| __Question 4__: Model Architecture | The submission details why the chosen architecture succeeded in the classification task and why earlier attempts were not as successful.  |
-| __Question 5__: Train and Validate the Model | The submission uses the validation set for model selection.  The submission describes how the model was trained by detailing the chosen optimizer, batch size, and number of epochs.   |
-| Test the Model    | Accuracy on the test set is 61% or greater. |
+| Model Architecture | The submission specifies a CNN architecture. |
+| Train the Model | The submission specifies the number of epochs to train the algorithm. |
+| Test the Model | The trained model attains at least 1% accuracy on the test set. |
+
+
+#### Step 5: Create a CNN to Classify Dog Breeds (using Transfer Learning)
+
+| Criteria       		|     Meets Specifications	        			            | 
+|:---------------------:|:---------------------------------------------------------:| 
+| Obtain Bottleneck Features | The submission downloads the bottleneck features corresponding to one of the Keras pre-trained models (VGG-19, ResNet-50, Inception, or Xception). |
+| Model Architecture | The submission specifies a model architecture.  |
+| __Question 5__: Model Architecture | The submission details why the chosen architecture succeeded in the classification task and why earlier attempts were not as successful.  |
+| Compile the Model | The submission compiles the architecture by specifying the loss function and optimizer. |
+| Train the Model    | The submission uses model checkpointing to train the model and saves the model with the best validation loss. |
+| Load the Model with the Best Validation Loss    | The submission loads the model weights that attained the least validation loss. |
+| Test the Model    | Accuracy on the test set is 60% or greater. |
 | Predict Dog Breed with the Model | The submission includes a function that takes a file path to an image as input and returns the dog breed that is predicted by the CNN. |
 
 
-#### Step 5: Write your Algorithm
+#### Step 6: Write your Algorithm
 
 | Criteria       		|     Meets Specifications	        			            | 
 |:---------------------:|:---------------------------------------------------------:| 
-| Write your Algorithm   | The submission uses the CNN from Step 4 to detect dog breed.  The submission has different output for each detected image type (dog, human, other) and provides either predicted actual (or resembling) dog breed. |
+| Write your Algorithm   | The submission uses the CNN from Step 5 to detect dog breed.  The submission has different output for each detected image type (dog, human, other) and provides either predicted actual (or resembling) dog breed. |
 
 #### Step 6: Test your Algorithm
 | Criteria       		|     Meets Specifications	        			            | 
@@ -166,6 +176,3 @@ Currently, if a dog appears 51% German Shephard and 49% poodle, only the German 
 #### (5) Experiment with Multiple Dog/Human Detectors
 
 Perform a systematic evaluation of various methods for detecting humans and dogs in images.  Provide improved methodology for the `face_detector` and `dog_detector` functions.
-
-
-
