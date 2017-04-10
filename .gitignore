@@ -3,3 +3,4 @@ dogImages/
 bottleneck_features/*
 lfw/
 saved_models/
+.ipynb_checkpoints/
