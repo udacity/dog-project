@@ -159,7 +159,7 @@ Click on the "Submit Project" button and follow the instructions to submit!
 
 #### (1) Augment the Training Data 
 
-[Augmenting the training and/or validation set](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html) might help improve model performance. If you choose to pursue this suggestion, please insert the corresponding code in Step 5 of the notebook. 
+[Augmenting the training and/or validation set](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html) might help improve model performance. 
 
 #### (2) Turn your Algorithm into a Web App
 
