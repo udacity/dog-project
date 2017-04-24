@@ -24,8 +24,9 @@ Along with exploring state-of-the-art CNN models for classification and localiza
 		git clone https://github.com/udacity/dog-project.git
 		cd dog-project
 	```
-3. Download the [dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip).  Unzip the folder and place it in the repo, at location `path/to/dog-project/dogImages`.  The `dogImages/` folder should contain 133 folders, each corresponding to a different dog breed.
-4. Download the [human dataset](http://vis-www.cs.umass.edu/lfw/lfw.tgz).  Unzip the folder and place it in the repo, at location `path/to/dog-project/lfw`.  If you are using a Windows machine, you are encouraged to use [7zip](http://www.7-zip.org/) to extract the folder. 
+2. Download the [dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip).  Unzip the folder and place it in the repo, at location `path/to/dog-project/dogImages`.  The `dogImages/` folder should contain 133 folders, each corresponding to a different dog breed.
+3. Download the [human dataset](http://vis-www.cs.umass.edu/lfw/lfw.tgz).  Unzip the folder and place it in the repo, at location `path/to/dog-project/lfw`.  If you are using a Windows machine, you are encouraged to use [7zip](http://www.7-zip.org/) to extract the folder. 
+4. Donwload the [VGG-16 bottleneck features](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz) for the dog dataset.  Place it in the repo, at location `path/to/dog-project/bottleneck_features`.
 5. Install the necessary Python packages.  If you are using a Mac, you need to pick only one of the two options below.
 
 	For __Mac/OSX__ (Option 1):
@@ -123,7 +124,7 @@ Click on the "Submit Project" button and follow the instructions to submit!
 | Criteria       		|     Meets Specifications	        			            | 
 |:---------------------:|:---------------------------------------------------------:| 
 | Model Architecture | The submission specifies a CNN architecture. |
-| Train the Model | The submission specifies the number of epochs to train the algorithm. |
+| Train the Model | The submission specifies the number of epochs used to train the algorithm. |
 | Test the Model | The trained model attains at least 1% accuracy on the test set. |
 
 
