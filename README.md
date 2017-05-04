@@ -31,13 +31,13 @@ Along with exploring state-of-the-art CNN models for classification, you will ma
 
 	For __Mac/OSX__ (Option 1):
 	```
-		pip install -r requirements.txt
+		pip install -r requirements/requirements.txt
 		KERAS_BACKEND=tensorflow python -c "from keras import backend"
 	```
 	
 	For __Mac/OSX__ (Option 2):
 	```
-		conda env create -f aind-dog-mac.yml
+		conda env create -f requirements/aind-dog-mac.yml
 		source activate aind-dog
 		KERAS_BACKEND=tensorflow python -c "from keras import backend"
 	```
