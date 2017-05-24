@@ -85,7 +85,7 @@ Alternatively, your submission could consist of the GitHub link to your reposito
 
 | Criteria       		|     Meets Specifications	        			            | 
 |:---------------------:|:---------------------------------------------------------:| 
-| Comments         		| The submission includes comments that describe the functionality of the code.  Every line of code is preceded by a meaningful comment.	|
+| Comments         		| The submission includes comments that describe the functionality of the code.  	|
 
 #### Step 1: Detect Humans
 
