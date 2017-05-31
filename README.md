@@ -27,7 +27,7 @@ Along with exploring state-of-the-art CNN models for classification, you will ma
 2. Download the [dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip).  Unzip the folder and place it in the repo, at location `path/to/dog-project/dogImages`. 
 3. Download the [human dataset](http://vis-www.cs.umass.edu/lfw/lfw.tgz).  Unzip the folder and place it in the repo, at location `path/to/dog-project/lfw`.  If you are using a Windows machine, you are encouraged to use [7zip](http://www.7-zip.org/) to extract the folder. 
 4. Donwload the [VGG-16 bottleneck features](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz) for the dog dataset.  Place it in the repo, at location `path/to/dog-project/bottleneck_features`.
-5. Obtain the necessary Python packages.  
+5. Obtain the necessary Python packages, and switch Keras backend to Tensorflow.  
 	
 	For __Mac/OSX__ or __Linux__:
 	```
@@ -40,7 +40,7 @@ Along with exploring state-of-the-art CNN models for classification, you will ma
 	```
 		conda env create -f requirements/aind-dog-windows.yml
 		activate aind-dog
-		set KERAS_BACKEND=tensorflow 
+		set KERAS_BACKEND=tensorflow
 		python -c "from keras import backend"
 	```
 6. Open the notebook and follow the instructions.
