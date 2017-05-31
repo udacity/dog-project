@@ -40,7 +40,8 @@ Along with exploring state-of-the-art CNN models for classification, you will ma
 	```
 		conda env create -f requirements/aind-dog-windows.yml
 		activate aind-dog
-		set KERAS_BACKEND=tensorflow python -c "from keras import backend"
+		set KERAS_BACKEND=tensorflow 
+		python -c "from keras import backend"
 	```
 6. Open the notebook and follow the instructions.
 	
@@ -84,7 +85,7 @@ Alternatively, your submission could consist of the GitHub link to your reposito
 
 | Criteria       		|     Meets Specifications	        			            | 
 |:---------------------:|:---------------------------------------------------------:| 
-| Comments         		| The submission includes comments that describe the functionality of the code.  Every line of code is preceded by a meaningful comment.	|
+| Comments         		| The submission includes comments that describe the functionality of the code.  	|
 
 #### Step 1: Detect Humans
 
