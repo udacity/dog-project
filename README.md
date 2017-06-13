@@ -29,9 +29,16 @@ Along with exploring state-of-the-art CNN models for classification, you will ma
 4. Donwload the [VGG-16 bottleneck features](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz) for the dog dataset.  Place it in the repo, at location `path/to/dog-project/bottleneck_features`.
 5. Obtain the necessary Python packages, and switch Keras backend to Tensorflow.  
 	
-	For __Mac/OSX__ or __Linux__:
+	For __Mac/OSX__:
 	```
-		conda env create -f requirements/aind-dog-mac-linux.yml
+		conda env create -f requirements/aind-dog-mac.yml
+		source activate aind-dog
+		KERAS_BACKEND=tensorflow python -c "from keras import backend"
+	```
+
+		For __Linux__:
+	```
+		conda env create -f requirements/aind-dog-linux.yml
 		source activate aind-dog
 		KERAS_BACKEND=tensorflow python -c "from keras import backend"
 	```
