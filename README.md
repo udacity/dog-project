@@ -36,7 +36,7 @@ Along with exploring state-of-the-art CNN models for classification, you will ma
 		KERAS_BACKEND=tensorflow python -c "from keras import backend"
 	```
 
-		For __Linux__:
+	For __Linux__:
 	```
 		conda env create -f requirements/aind-dog-linux.yml
 		source activate aind-dog
