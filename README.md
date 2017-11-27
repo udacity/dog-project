@@ -31,10 +31,17 @@ cd dog-project
 4. Donwload the [VGG-16 bottleneck features](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz) for the dog dataset.  Place it in the repo, at location `path/to/dog-project/bottleneck_features`.
 
 5. Create (and activate) a new environment with Python 3.6.
-```
-conda create --name dog-project python=3.6
-source activate dog-project
-```  
+
+	- __Linux__ or __Mac__: 
+	```
+	conda create --name dog-project python=3.6
+	source activate dog-project
+	```  
+	- __Windows__: 
+	```
+	conda create --name dog-project python=3.6
+	activate dog-project
+	```
 
 6. Install a few pip packages.
 ```
