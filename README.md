@@ -42,15 +42,11 @@ pip install -r requirements.txt
 ```
 
 7. Install TensorFlow. 
-	- Option 1: If you are using an EC2 GPU instance, install the `tensorflow-gpu` package:
+	- Option 1: __To install TensorFlow with GPU support__, follow [the guide](https://www.tensorflow.org/install/) to install the necessary NVIDIA software on your system.  If you are using an EC2 GPU instance, you can skip this step and only need to install the `tensorflow-gpu` package:
 		```
 		pip install tensorflow-gpu==1.1.0
 		```
-	- Option 2: __To install TensorFlow with GPU support__ on a local machine, follow [the guide](https://www.tensorflow.org/install/) to install the necessary NVIDIA software on your system.  Then, install the `tensorflow-gpu` package:
-		```
-		pip install tensorflow-gpu==1.1.0
-		```
-	- Option 3: __To install TensorFlow with CPU support only__ on a local machine:
+	- Option 2: __To install TensorFlow with CPU support only__ on a local machine:
 		```
 		pip install tensorflow==1.1.0
 		```
