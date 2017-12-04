@@ -32,27 +32,40 @@ cd dog-project
 
 5. (Optional) __If you plan to install TensorFlow with GPU support on your local machine__, follow [the guide](https://www.tensorflow.org/install/) to install the necessary NVIDIA software on your system.  If you are using an EC2 GPU instance, you can skip this step.
 
-6. Create (and activate) a new environment with Python 3.5.
+6. Create (and activate) a new environment.
 
-	- __Linux__ or __Mac__ (with GPU support): 
+	- __Linux__ (to install with __GPU support__, change `requirements/dog-linux.yml` to `requirements/dog-linux-gpu.yml`): 
 	```
-	conda create --name dog-project python=3.5
+	conda env create -f requirements/dog-linux.yml
 	source activate dog-project
-	pip install -r requirements/requirements-gpu.txt
 	```  
-	- __Linux__ or __Mac__ (without GPU support): 
+	- __Mac__ (to install with __GPU support__, change `requirements/dog-mac.yml` to `requirements/dog-mac-gpu.yml`): 
+	```
+	conda env create -f requirements/dog-mac.yml
+	source activate dog-project
+	```  
+	- __Windows__ (to install with __GPU support__, change `requirements/dog-windows.yml` to `requirements/dog-windows-gpu.yml`):  
+	```
+	conda env create -f requirements/dog-windows.yml
+	activate dog-project
+	```
+	
+7. (_Optional_) Only if Step 6 throws errors, try this __alternative__ step to create your environment.
+
+	- __Linux__ or __Mac__ (to install with __GPU support__, change `requirements/requirements.txt` to `requirements/requirements-gpu.txt`): 
 	```
 	conda create --name dog-project python=3.5
 	source activate dog-project
 	pip install -r requirements/requirements.txt
 	```  
-	- __Windows__: 
+	- __Windows__ (to install with __GPU support__, change `requirements/requirements.txt` to `requirements/requirements-gpu.txt`):  
 	```
-	conda env create -f requirements/aind-dog-windows.yml
+	conda create --name dog-project python=3.5
 	activate dog-project
+	pip install -r requirements/requirements.txt
 	```
 	
-7. Switch [Keras backend](https://keras.io/backend/) to TensorFlow.
+8. Switch [Keras backend](https://keras.io/backend/) to TensorFlow.
 	- __Linux__ or __Mac__: 
 		```
 		KERAS_BACKEND=tensorflow python -c "from keras import backend"
@@ -63,13 +76,13 @@ cd dog-project
 		python -c "from keras import backend"
 		```
 
-8. Create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `dog-project` environment.  Open the notebook.
+9. Create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `dog-project` environment.  Open the notebook.
 ```
 python -m ipykernel install --user --name dog-project --display-name "dog-project"
 jupyter notebook dog_app.ipynb
 ```
 
-9. Before running code, change the kernel to match the dog-project environment by using the drop-down menu (**Kernel > Change kernel > dog-project**). Then, follow the instructions in the notebook.
+10. Before running code, change the kernel to match the dog-project environment by using the drop-down menu (**Kernel > Change kernel > dog-project**). Then, follow the instructions in the notebook.
 
 __NOTE:__ While some code has already been implemented to get you started, you will need to implement additional functionality to successfully answer all of the questions included in the notebook. __Unless requested, do not modify code that has already been included.__
 
