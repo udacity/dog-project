@@ -7,7 +7,7 @@
 
 ## Project Overview
 
-Welcome to the Convolutional Neural Networks (CNN) project in the AI Nanodegree! In this project, you will learn how to build a pipeline that can be used within a web or mobile app to process real-world, user-supplied images.  Given an image of a dog, your algorithm will identify an estimate of the canine’s breed.  If supplied an image of a human, the code will identify the resembling dog breed.  
+Welcome to the Convolutional Neural Networks (CNN) project in the AI Nanodegree! In this project, you will learn how to build a pipeline that can be used within a web or mobile app to process real-world, user-supplied images.  Given an image of a dog, your algorithm will identify an estimate of the canine’s breed.  If supplied an image of a human, the code will identify the resembling dog breed.
 
 ![Sample Output][image1]
 
@@ -19,14 +19,14 @@ Along with exploring state-of-the-art CNN models for classification, you will ma
 ### Instructions
 
 1. Clone the repository and navigate to the downloaded folder.
-```	
+```
 git clone https://github.com/udacity/dog-project.git
 cd dog-project
 ```
 
-2. Download the [dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip).  Unzip the folder and place it in the repo, at location `path/to/dog-project/dogImages`. 
+2. Download the [dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip).  Unzip the folder and place it in the repo, at location `path/to/dog-project/dogImages`.
 
-3. Download the [human dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/lfw.zip).  Unzip the folder and place it in the repo, at location `path/to/dog-project/lfw`.  If you are using a Windows machine, you are encouraged to use [7zip](http://www.7-zip.org/) to extract the folder. 
+3. Download the [human dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/lfw.zip).  Unzip the folder and place it in the repo, at location `path/to/dog-project/lfw`.  If you are using a Windows machine, you are encouraged to use [7zip](http://www.7-zip.org/) to extract the folder.
 
 4. Donwload the [VGG-16 bottleneck features](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz) for the dog dataset.  Place it in the repo, at location `path/to/dog-project/bottleneck_features`.
 
@@ -34,54 +34,54 @@ cd dog-project
 
 6. (Optional) **If you are running the project on your local machine (and not using AWS)**, create (and activate) a new environment.
 
-	- __Linux__ (to install with __GPU support__, change `requirements/dog-linux.yml` to `requirements/dog-linux-gpu.yml`): 
+	- __Linux__ (to install with __GPU support__, change `requirements/dog-linux.yml` to `requirements/dog-linux-gpu.yml`):
 	```
 	conda env create -f requirements/dog-linux.yml
 	source activate dog-project
-	```  
-	- __Mac__ (to install with __GPU support__, change `requirements/dog-mac.yml` to `requirements/dog-mac-gpu.yml`): 
+	```
+	- __Mac__ (to install with __GPU support__, change `requirements/dog-mac.yml` to `requirements/dog-mac-gpu.yml`):
 	```
 	conda env create -f requirements/dog-mac.yml
 	source activate dog-project
-	```  
-	- __Windows__ (to install with __GPU support__, change `requirements/dog-windows.yml` to `requirements/dog-windows-gpu.yml`):  
+	```
+	- __Windows__ (to install with __GPU support__, change `requirements/dog-windows.yml` to `requirements/dog-windows-gpu.yml`):
 	```
 	conda env create -f requirements/dog-windows.yml
 	activate dog-project
 	```
-	
+
 7. (Optional) **If you are running the project on your local machine (and not using AWS)** and Step 6 throws errors, try this __alternative__ step to create your environment.
 
-	- __Linux__ or __Mac__ (to install with __GPU support__, change `requirements/requirements.txt` to `requirements/requirements-gpu.txt`): 
+	- __Linux__ or __Mac__ (to install with __GPU support__, change `requirements/requirements.txt` to `requirements/requirements-gpu.txt`):
 	```
 	conda create --name dog-project python=3.5
 	source activate dog-project
 	pip install -r requirements/requirements.txt
-	```  
-	- __Windows__ (to install with __GPU support__, change `requirements/requirements.txt` to `requirements/requirements-gpu.txt`):  
+	```
+	- __Windows__ (to install with __GPU support__, change `requirements/requirements.txt` to `requirements/requirements-gpu.txt`):
 	```
 	conda create --name dog-project python=3.5
 	activate dog-project
 	pip install -r requirements/requirements.txt
 	```
-	
+
 8. (Optional) **If you are using AWS**, install Tensorflow.
 ```
 sudo python3 -m pip install -r requirements/requirements-gpu.txt
 ```
-	
+
 9. Switch [Keras backend](https://keras.io/backend/) to TensorFlow.
-	- __Linux__ or __Mac__: 
+	- __Linux__ or __Mac__:
 		```
 		KERAS_BACKEND=tensorflow python -c "from keras import backend"
 		```
-	- __Windows__: 
+	- __Windows__:
 		```
 		set KERAS_BACKEND=tensorflow
 		python -c "from keras import backend"
 		```
 
-10. (Optional) **If you are running the project on your local machine (and not using AWS)**, create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `dog-project` environment. 
+10. (Optional) **If you are running the project on your local machine (and not using AWS)**, create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `dog-project` environment.
 ```
 python -m ipykernel install --user --name dog-project --display-name "dog-project"
 ```
@@ -115,42 +115,46 @@ Alternatively, your submission could consist of the GitHub link to your reposito
 
 #### Files Submitted
 
-| Criteria       		|     Meets Specifications	        			            | 
-|:---------------------:|:---------------------------------------------------------:| 
+| Criteria       		|     Meets Specifications	        			            |
+|:---------------------:|:---------------------------------------------------------:|
 | Submission Files      | The submission includes all required files.		|
 
 #### Documentation
 
-| Criteria       		|     Meets Specifications	        			            | 
-|:---------------------:|:---------------------------------------------------------:| 
+| Criteria       		|     Meets Specifications	        			            |
+|:---------------------:|:---------------------------------------------------------:|
 | Comments         		| The submission includes comments that describe the functionality of the code.  	|
 
 #### Step 1: Detect Humans
 
-| Criteria       		|     Meets Specifications	        			            | 
-|:---------------------:|:---------------------------------------------------------:| 
+| Criteria       		|     Meets Specifications	        			            |
+|:---------------------:|:---------------------------------------------------------:|
 | __Question 1:__ Assess the Human Face Detector |  The submission returns the percentage of the first 100 images in the dog and human face datasets with a detected human face.          |
 | __Question 2:__ Assess the Human Face Detector |  The submission opines whether Haar cascades for face detection are an appropriate technique for human detection.    |
 
 #### Step 2: Detect Dogs
 
-| Criteria       		|     Meets Specifications	        			            | 
-|:---------------------:|:---------------------------------------------------------:| 
+| Criteria       		|     Meets Specifications	        			            |
+|:---------------------:|:---------------------------------------------------------:|
 | __Question 3:__ Assess the Dog Detector |  The submission returns the percentage of the first 100 images in the dog and human face datasets with a detected dog.          |
 
 #### Step 3: Create a CNN to Classify Dog Breeds (from Scratch)
 
-| Criteria       		|     Meets Specifications	        			            | 
-|:---------------------:|:---------------------------------------------------------:| 
+| Criteria       		|     Meets Specifications	        			            |
+|:---------------------:|:---------------------------------------------------------:|
 | Model Architecture | The submission specifies a CNN architecture. |
 | Train the Model | The submission specifies the number of epochs used to train the algorithm. |
 | Test the Model | The trained model attains at least 1% accuracy on the test set. |
+| __Question 4__: Outline the steps | Outline the steps you took to get to your final CNN architecture and your reasoning at each step. If you chose to use the hinted architecture above, describe why you think that CNN architecture should work well for the image classification task. |
 
+#### Step 4: Use a CNN to Classify Dog Breeds
+
+No criteria and specifications
 
 #### Step 5: Create a CNN to Classify Dog Breeds (using Transfer Learning)
 
-| Criteria       		|     Meets Specifications	        			            | 
-|:---------------------:|:---------------------------------------------------------:| 
+| Criteria       		|     Meets Specifications	        			            |
+|:---------------------:|:---------------------------------------------------------:|
 | Obtain Bottleneck Features | The submission downloads the bottleneck features corresponding to one of the Keras pre-trained models (VGG-19, ResNet-50, Inception, or Xception). |
 | Model Architecture | The submission specifies a model architecture.  |
 | __Question 5__: Model Architecture | The submission details why the chosen architecture succeeded in the classification task and why earlier attempts were not as successful.  |
@@ -163,13 +167,13 @@ Alternatively, your submission could consist of the GitHub link to your reposito
 
 #### Step 6: Write your Algorithm
 
-| Criteria       		|     Meets Specifications	        			            | 
-|:---------------------:|:---------------------------------------------------------:| 
+| Criteria       		|     Meets Specifications	        			            |
+|:---------------------:|:---------------------------------------------------------:|
 | Write your Algorithm   | The submission uses the CNN from Step 5 to detect dog breed.  The submission has different output for each detected image type (dog, human, other) and provides either predicted actual (or resembling) dog breed. |
 
 #### Step 7: Test your Algorithm
-| Criteria       		|     Meets Specifications	        			            | 
-|:---------------------:|:---------------------------------------------------------:| 
+| Criteria       		|     Meets Specifications	        			            |
+|:---------------------:|:---------------------------------------------------------:|
 | Test Your Algorithm on Sample Images!   | The submission tests at least 6 images, including at least two human and two dog images. |
 | __Question 6__: Test Your Algorithm on Sample Images! | The submission discusses performance of the algorithm and discusses at least three possible points of improvement. |
 
@@ -177,13 +181,13 @@ Alternatively, your submission could consist of the GitHub link to your reposito
 
 (Presented in no particular order ...)
 
-#### (1) Augment the Training Data 
+#### (1) Augment the Training Data
 
-[Augmenting the training and/or validation set](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html) might help improve model performance. 
+[Augmenting the training and/or validation set](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html) might help improve model performance.
 
 #### (2) Turn your Algorithm into a Web App
 
-Turn your code into a web app using [Flask](http://flask.pocoo.org/) or [web.py](http://webpy.org/docs/0.3/tutorial)!  
+Turn your code into a web app using [Flask](http://flask.pocoo.org/) or [web.py](http://webpy.org/docs/0.3/tutorial)!
 
 #### (3) Overlay Dog Ears on Detected Human Heads
 
@@ -191,7 +195,7 @@ Overlay a Snapchat-like filter with dog ears on detected human heads.  You can d
 
 #### (4) Add Functionality for Dog Mutts
 
-Currently, if a dog appears 51% German Shephard and 49% poodle, only the German Shephard breed is returned.  The algorithm is currently guaranteed to fail for every mixed breed dog.  Of course, if a dog is predicted as 99.5% Labrador, it is still worthwhile to round this to 100% and return a single breed; so, you will have to find a nice balance.  
+Currently, if a dog appears 51% German Shephard and 49% poodle, only the German Shephard breed is returned.  The algorithm is currently guaranteed to fail for every mixed breed dog.  Of course, if a dog is predicted as 99.5% Labrador, it is still worthwhile to round this to 100% and return a single breed; so, you will have to find a nice balance.
 
 #### (5) Experiment with Multiple Dog/Human Detectors
 
