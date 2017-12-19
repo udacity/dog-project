@@ -147,6 +147,9 @@ Alternatively, your submission could consist of the GitHub link to your reposito
 | Test the Model | The trained model attains at least 1% accuracy on the test set. |
 | __Question 4__: Outline the steps | Outline the steps you took to get to your final CNN architecture and your reasoning at each step. If you chose to use the hinted architecture above, describe why you think that CNN architecture should work well for the image classification task. |
 
+#### Step 4: Use a CNN to Classify Dog Breeds
+
+No criteria and specifications
 
 #### Step 5: Create a CNN to Classify Dog Breeds (using Transfer Learning)
 
