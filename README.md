@@ -43,12 +43,16 @@ cd dog-project
 	conda env create -f requirements/dog-mac.yml
 	source activate dog-project
 	```  
+	**NOTE:** Some Mac users may need to install a different version of OpenCV
+	```
+	conda install --channel https://conda.anaconda.org/menpo opencv3
+	```
 	- __Windows__ (to install with __GPU support__, change `requirements/dog-windows.yml` to `requirements/dog-windows-gpu.yml`):  
 	```
 	conda env create -f requirements/dog-windows.yml
 	activate dog-project
 	```
-	
+
 7. (Optional) **If you are running the project on your local machine (and not using AWS)** and Step 6 throws errors, try this __alternative__ step to create your environment.
 
 	- __Linux__ or __Mac__ (to install with __GPU support__, change `requirements/requirements.txt` to `requirements/requirements-gpu.txt`): 
@@ -56,7 +60,11 @@ cd dog-project
 	conda create --name dog-project python=3.5
 	source activate dog-project
 	pip install -r requirements/requirements.txt
-	```  
+	```
+	**NOTE:** Some Mac users may need to install a different version of OpenCV
+	```
+	conda install --channel https://conda.anaconda.org/menpo opencv3
+	```
 	- __Windows__ (to install with __GPU support__, change `requirements/requirements.txt` to `requirements/requirements-gpu.txt`):  
 	```
 	conda create --name dog-project python=3.5
