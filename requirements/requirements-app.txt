@@ -4,12 +4,14 @@ bleach==1.5.0
 certifi==2019.11.28
 cffi==1.11.5
 chardet==3.0.4
+Click==7.0
 clyent==1.2.2
 colorama==0.3.7
 cryptography==2.0.3
 cycler==0.10.0
 decorator==4.0.11
 entrypoints==0.2.2
+Flask==0.12.4
 h5py==2.7.0
 html5lib==0.999
 idna==2.8
@@ -17,6 +19,7 @@ ipykernel==4.5.2
 ipython==5.3.0
 ipython-genutils==0.1.0
 ipywidgets==6.0.0
+itsdangerous==1.1.0
 Jinja2==2.9.5
 jsonschema==2.5.1
 jupyter==1.0.0
@@ -66,6 +69,7 @@ tqdm==4.11.2
 traitlets==4.3.2
 urllib3==1.25.8
 wcwidth==0.1.8
+Werkzeug==1.0.0
 widgetsnbextension==2.0.0
 win-inet-pton==1.0.1
 win-unicode-console==0.5
