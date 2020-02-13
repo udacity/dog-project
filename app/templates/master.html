@@ -41,10 +41,10 @@
 <div id="content" class="container">
     <div class="row">
         {% for image in images %}
-        <div class="col-sm-4 col-lg-2">
+        <div class="col-sm-4 col-lg-1">
             <figure>
                 <a href="?selection={{image}}">
-                    <img src="/static/{{image}}" style="width: 100px; height: 100px">
+                    <img src="/static/{{image}}" style="width: 100px; height: 100px" alt="{{image}}" title="{{image}}">
                 </a>
                 <!-- <figcaption style="width:100px;">{{image}}</figcaption> -->
             </figure>
